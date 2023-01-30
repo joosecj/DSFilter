@@ -8,7 +8,10 @@ function App() {
   return (
     <>
       <Header />
-      <FilterCard />
+      <section id='content'>
+        <FilterCard />
+      </section>
+
     </>
   );
 }

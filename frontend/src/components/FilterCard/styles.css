@@ -1,6 +1,7 @@
 .container-card-form {
   background-color: var(--bg-card-filter);
   padding: 20px;
+  border-radius: 5px;
 }
 
 #inpt {
@@ -28,4 +29,5 @@
   border: none;
   width: 200px;
   height: 40px;
+  border-radius: 5px;
 }
