@@ -1,18 +1,16 @@
+import { ProductDTO } from '../../moldes/ProductDTO';
 import './styles.css';
 
-export default function ListingCard() {
+type Props = {
+  products : ProductDTO;
+}
+
+export default function ListingCard({products}: Props) {
   return (
-    <div className='container'>
-      <div className='container-card-prod'>
         <div className='card-product'>
-          <p>PC Gamer Pro</p>
-          <p className='product-price'>R$ 1200.00</p>
+          <p className='product-name'>{products.name}</p>
+          <p className='product-price'>R$ {products.price}</p>
         </div>
-        <div className='card-product'>
-          <p>PC Gamer Pro</p>
-          <p className='product-price'>R$ 1200.00</p>
-        </div>
-      </div>
-    </div>
+    
   );
 }

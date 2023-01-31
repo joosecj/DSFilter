@@ -1,5 +1,7 @@
-.title-header {
+header {
   background-color: var(--bg-primary);
+}
+.title-header {
   color: var(--text-header-primary);
   display: flex;
   align-items: center;
