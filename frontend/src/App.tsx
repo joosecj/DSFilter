@@ -22,23 +22,20 @@ function App() {
     valueMax: MAX_PRICE,
   });
 
-  const [products, setProducts] = useState<ProductDTO[]>(productService.findByPrice(queryParams.valueMin, queryParams.valueMin));
+  const [products, setProducts] = useState<ProductDTO[]>([]);
 
   const [contextListCount, setContextListCount] = useState<number>(0);
 
   useEffect(() => {
     const newFilter = productService.findByPrice(queryParams.valueMin, queryParams.valueMax);
-    console.log(queryParams)
     setProducts(newFilter);
     setContextListCount(newFilter.length);
   }, [queryParams]);
 
   function handleFilter(min: number, max: number) {
-    const newMin = min == undefined ? MIN_PRICE : min;
-    const newMax = max == undefined ? MAX_PRICE : max;
-    console.log(newMax)
-    console.log(newMin)
-    setQueryParams({ valueMin: newMin, valueMax: newMax })
+    const newMin = min;
+    const newMax = max;
+    setQueryParams({ valueMin: newMin || MIN_PRICE, valueMax: newMax || MAX_PRICE});
   }
 
   return (

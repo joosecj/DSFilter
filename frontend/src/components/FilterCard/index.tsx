@@ -19,7 +19,6 @@ export default function FilterCard( {onNewFilter} : Props) {
   function handleFormSubmit(event: any) {
     event.preventDefault();
     setFormData(formData);
-    console.log(formData);
     onNewFilter(formData.min, formData.max)
   }
 
@@ -52,7 +51,7 @@ export default function FilterCard( {onNewFilter} : Props) {
             />
           </div>
 
-          <div className='btn-container mr-top'>
+          <div>
             <button className='btn'>Filtrar</button>
           </div>
         </form>
