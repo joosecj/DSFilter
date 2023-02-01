@@ -26,13 +26,13 @@ Criar e executar o projeto em seu ambiente de desenvolvimento local é muito fá
 
 ### Frontend
 
-1. Clone o código fonte
+1. **Clone** o código fonte
 
    ```bash
       git git@github.com:joosecj/DSFilter.git
    ```
 
-2. Abra o projeto em sua IDE de preferência(utilizado o Visual Studio Code).
+2. Abra o projeto em sua **IDE** de preferência(utilizado o Visual Studio Code).
 
 3. Faça o download das dependências com o comando a seguir: (certifique que eseja na pasta raiz (FRONTEND))  
 
