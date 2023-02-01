@@ -16,7 +16,9 @@ Deploy do projeto realizado no vercel, veja [aqui](https://ds-filter.vercel.app/
 ## Veja o projeto
 
 ![FrontEnd](https://raw.githubusercontent.com/joosecj/DSFilter/main/image/01.png)
+##
 ![FrontEnd](https://raw.githubusercontent.com/joosecj/DSFilter/main/image/02.png)
+
 ## Como criar e executar o DSFilter localmente
 
 Criar e executar o projeto em seu ambiente de desenvolvimento local é muito fácil. Certifique-se de ter o Git instalados e siga as instruções abaixo. Precisa de informações adicionais? entre em contato com os autores.
@@ -27,20 +29,22 @@ Criar e executar o projeto em seu ambiente de desenvolvimento local é muito fá
 1. Clone o código fonte
 
    ```bash
-    git git@github.com:joosecj/DSFilter.git
+      git git@github.com:joosecj/DSFilter.git
    ```
 
 2. Abra o projeto em sua IDE de preferência(utilizado o Visual Studio Code).
 
 3. Faça o download das dependências com o comando a seguir: (certifique que eseja na pasta raiz (FRONTEND))  
- ```bash 
-  yarn
- ```
- 4. Em seguida execute o comoando para inicializar o projeto localmente: 
- 
- ```bash 
-  yarn dev
- ```
+
+   ```bash
+      yarn
+   ```
+
+4. Em seguida execute o comoando para inicializar o projeto localmente:
+
+   ```bash
+      yarn dev
+   ```
 
 ## Tecnologias utlizadas
 
