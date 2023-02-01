@@ -1,4 +1,4 @@
-<h1 align="center">Desafio GitHub Api</h1>
+<h1 align="center">DSFilter</h1>
 
 <p align='center'>
    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
@@ -7,19 +7,17 @@
    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 </p>
 
-Projeto desenvolvido foi proposto pela [DevSuperior](https://devsuperior.com.br/) teve o objetivo de consumir Api do GitHub e buscar um usuário utlizando a biblioteca React com typescript, o layout foi disponibilizado no figma. Com isso foi possível praticar e compreender melhor a estrutura do react, bem como a utilização dos componentes, routes e props.
+Projeto desenvolvido foi proposto pela [DevSuperior](https://devsuperior.com.br/) teve o objetivo de filtrar produtos pelo preço minímo e maxímo utlizando a biblioteca React com typescript, o layout foi disponibilizado no figma. Com isso foi possível praticar e compreender melhor a estrutura do react, bem como a eventos, estado global sendo a comunicação entre componentes.
 
 ##
 
-Deploy do projeto realizado no vercel, veja [aqui](https://github-api-red-six.vercel.app/home).
+Deploy do projeto realizado no vercel, veja [aqui](https://ds-filter.vercel.app/).
 
 ## Veja o projeto
 
-Experimente live demo:
-
-![FrontEnd](https://i.imgur.com/CI3R2Dn.gif)
-
-## Como criar e executar o Desafio GitHub Api localmente
+![FrontEnd](https://raw.githubusercontent.com/joosecj/DSFilter/main/image/01.png)
+![FrontEnd](https://raw.githubusercontent.com/joosecj/DSFilter/main/image/02.png)
+## Como criar e executar o DSFilter localmente
 
 Criar e executar o projeto em seu ambiente de desenvolvimento local é muito fácil. Certifique-se de ter o Git instalados e siga as instruções abaixo. Precisa de informações adicionais? entre em contato com os autores.
 (Estas instruções pressupõem que você esteja instalando como usuário com permissões root/administrador.)
@@ -29,12 +27,12 @@ Criar e executar o projeto em seu ambiente de desenvolvimento local é muito fá
 1. Clone o código fonte
 
    ```bash
-    git clone git@github.com:joosecj/github-api.git
+    git git@github.com:joosecj/DSFilter.git
    ```
 
 2. Abra o projeto em sua IDE de preferência(utilizado o Visual Studio Code).
 
-3. Faça o download das dependências com o comando a seguir: (certifique que eseja na pasta raiz)  
+3. Faça o download das dependências com o comando a seguir: (certifique que eseja na pasta raiz (FRONTEND))  
  ```bash 
   yarn
  ```
