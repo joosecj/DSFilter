@@ -7,9 +7,9 @@ type FormData = {
 }
 
 type Props = {
-  onNewFilter : Function
+  onNewFilter: Function
 }
-export default function FilterCard( {onNewFilter} : Props) {
+export default function FilterCard({ onNewFilter }: Props) {
 
   const [formData, setFormData] = useState<FormData>({
     min: undefined,
@@ -19,7 +19,6 @@ export default function FilterCard( {onNewFilter} : Props) {
   function handleFormSubmit(event: any) {
     event.preventDefault();
     setFormData(formData);
-    console.log(formData);
     onNewFilter(formData.min, formData.max)
   }
 
@@ -27,7 +26,6 @@ export default function FilterCard( {onNewFilter} : Props) {
     const value = event.target.value;
     const name = event.target.name;
     setFormData({ ...formData, [name]: value });
-    console.log(formData)
   }
   return (
     <div className='container'>
@@ -51,8 +49,7 @@ export default function FilterCard( {onNewFilter} : Props) {
               onChange={handleInputChange}
             />
           </div>
-
-          <div className='btn-container mr-top'>
+          <div>
             <button className='btn'>Filtrar</button>
           </div>
         </form>

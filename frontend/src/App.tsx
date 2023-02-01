@@ -28,7 +28,6 @@ function App() {
 
   useEffect(() => {
     const newFilter = productService.findByPrice(queryParams.valueMin, queryParams.valueMax);
-    console.log(queryParams)
     setProducts(newFilter);
     setContextListCount(newFilter.length);
   }, [queryParams]);
@@ -36,8 +35,6 @@ function App() {
   function handleFilter(min: number, max: number) {
     const newMin = min == undefined ? MIN_PRICE : min;
     const newMax = max == undefined ? MAX_PRICE : max;
-    console.log(newMax)
-    console.log(newMin)
     setQueryParams({ valueMin: newMin, valueMax: newMax })
   }
 
