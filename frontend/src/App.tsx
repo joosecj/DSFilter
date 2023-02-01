@@ -22,7 +22,7 @@ function App() {
     valueMax: MAX_PRICE,
   });
 
-  const [products, setProducts] = useState<ProductDTO[]>(productService.findByPrice(queryParams.valueMin, queryParams.valueMin));
+  const [products, setProducts] = useState<ProductDTO[]>([]);
 
   const [contextListCount, setContextListCount] = useState<number>(0);
 
@@ -33,9 +33,9 @@ function App() {
   }, [queryParams]);
 
   function handleFilter(min: number, max: number) {
-    const newMin = min == undefined ? MIN_PRICE : min;
-    const newMax = max == undefined ? MAX_PRICE : max;
-    setQueryParams({ valueMin: newMin, valueMax: newMax })
+    const newMin = min;
+    const newMax = max;
+    setQueryParams({ valueMin: newMin || MIN_PRICE, valueMax: newMax || MAX_PRICE });
   }
 
   return (
@@ -58,5 +58,4 @@ function App() {
     </>
   );
 }
-
 export default App
